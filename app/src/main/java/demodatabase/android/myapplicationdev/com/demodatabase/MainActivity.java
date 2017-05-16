@@ -63,10 +63,10 @@ public class MainActivity extends AppCompatActivity {
                 }
                 tvResults.setText(txt);
 
-                //Step 2b: Initialise the ArrayAdapter to link to the ArrayList
+                //Initialise the ArrayAdapter to link to the ArrayList
                 aaTask = new ArrayAdapter<Task>(MainActivity.this,android.R.layout.simple_list_item_1, alTask);
 
-                //Implement ListView Step 3:  Set Adapter for the ListView
+                //Set Adapter for the ListView
                 lv.setAdapter(aaTask);
                 aaTask.notifyDataSetChanged();
             }
